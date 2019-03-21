@@ -1,0 +1,321 @@
+* {box-sizing: border-box;}
+
+body {
+  padding-top: 0rem;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.row {
+  padding-bottom: 50px;
+}
+
+
+
+/* photo slider*/
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 10px;
+  height: 50px;
+  background-color: #DCDCDC;
+  opacity: 0.7;
+  border-radius: 0;
+}
+
+/* footer style*/
+footer {
+    position: relative;
+    border-top-color: black;
+    background-color: #2d3436;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-footer {
+    color: white;
+    padding-top: 20px;
+}
+
+.center-footer h3 {
+    position: relative;
+    font-family: 'lexia', serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding-top: 2px;
+    color: white;
+}
+
+.center-footer p {
+    position: relative;
+    font-family: 'lexia', serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+.right-footer p {
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.left-footer img {
+    width: 200px;
+    padding-top: 30px;
+    padding-left: 20px;
+
+}
+
+/* video header, intro text */
+
+.project-title {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  text-indent: 6rem;
+  z-index: 500;
+  padding-bottom: 50px;
+}
+
+/* .headline {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    z-index: 1000;
+    text-indent: 6rem;
+} */
+
+.project-title img {
+  position: absolute;
+  top: 97%;
+  left: 45%;
+  z-index: 500;
+  opacity: 0.7;
+}
+
+.birth-text {
+      position: absolute;
+      top: 55%;
+      width: 100%;
+      z-index: 10000;
+      text-indent: 6rem;
+      padding-bottom: 40px;
+}
+
+/* premature to prima donna  */
+.headline h1 {
+    font-family: 'lexia-advertising', serif;
+    font-weight: 400;
+    font-size: 72px;
+    letter-spacing: 3pt;
+    text-align: left;
+    text-indent: 6rem;
+    color: white;
+}
+/* The Heartwarming Story of Fiona the Hippo */
+.headline h2 {
+    font-family: 'lexia', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 34px;
+    text-align: left;
+    color: white;
+    letter-spacing: 1.6pt;
+}
+/* Soul of Athens Presents */
+.headline h3 {
+    font-family: 'lexia', serif;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 4pt;
+    text-indent: 6rem;
+    text-align: left;
+    color: white;
+}
+
+.headline p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+
+}
+
+h6 {
+  font-family: 'lexia', serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#introText {
+  color: #4d5d5d;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'lexia', sans-serif;
+  font-style: 'thin';
+  z-index: 700;
+}
+
+/*Start video background full screen with project title*/
+
+#full-vid {
+    position: relative;
+    padding-bottom: 56.75%;
+    padding-top: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#full-vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100000;
+
+}
+
+#full-vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100000;
+
+}
+
+#pullquote {
+  background-color: #DCDCDC;
+  padding: 100px;
+}
+
+#pullquote h6 {
+  font-size: 30px;
+}
+
+/* #animation {
+    position: relative;
+    padding-bottom: 56.75%;
+    padding-top: 0;
+    overflow: hidden;
+} */
+
+/* #animation iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+} */
+
+/* scrollspy */
+
+.list-group a {
+  color: red;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  color: red;
+}
+
+
+#gaining-vid {
+    /* padding-bottom: 56.75%; */
+    padding-top: 0;
+    z-index: 100;
+}
+
+#gaining-vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100000;
+
+}
+
+#firststeps-vid {
+  position: relative;
+  padding-bottom: 56.75%;
+  padding-top: 0;
+  overflow: hidden;
+  z-index: -10000;
+}
+
+#firststeps-vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100000;
+}
+
+.fionafact {
+  background-color: #a3dad7;
+  font-family: 'lexia', serif;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 0.5rem;
+  box-shadow: 5px 10px 15px #DCDCDC;
+
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #4d5d5d;
+}
